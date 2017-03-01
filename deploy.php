@@ -12,16 +12,6 @@ set('shared_files', []);
 set('shared_dirs', []);
 set('writable_dirs', []);
 
-// Configure servers
-server('production', 'bentray.work', '1157')
-    ->user('bentraywork')
-    ->password()
-    ->env('deploy_path', '/home/bentraywork/public_html/deploy-test/yii2-advanced-deployer-gitlab/');
-
-server('beta', 'beta.domain.com')
-    ->user('username')
-    ->password()
-    ->env('deploy_path', '/var/www/beta.domain.com');
 
 /**
  * Restart php-fpm on success deploy.
